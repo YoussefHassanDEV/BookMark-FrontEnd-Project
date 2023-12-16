@@ -69,3 +69,12 @@
     background-color: #D30820;
     transition-duration: 0.4s;
 }
+.pop{
+    top: 30%;
+    left: 30%;
+
+}
+.bg
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}

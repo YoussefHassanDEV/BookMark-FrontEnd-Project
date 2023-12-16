@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="container bg-orange-100 vh-100 main1 ">
+    <div class="container bg-orange-100 vh-100 main1 position-absolute">
         <div class="container-md "><br>
             <div class="main2  mx-auto w-80 position-relative">
                 <h1 class="text-5xl text-center py-1  z-0">BookMarker</h1>
@@ -36,12 +36,14 @@
                 <div class="d-flex flex-column container">
                     <label for="basic-url" class="form-label"><i class="fa-solid fa-book"></i>
                         Site Name</label>
-                    <input type="text" class="form-control mb-3"id="Name" placeholder="Bookmark Name" onkeyup="validateProductName()">
+                    <input type="text" class="form-control mb-3" id="Name" placeholder="Bookmark Name"
+                        onkeyup="validateProductName()">
                 </div>
                 <div class="d-flex flex-column container">
-                    <label for="basic-url" class="form-label" ><i class="fa-solid fa-link"></i>
+                    <label for="basic-url" class="form-label"><i class="fa-solid fa-link"></i>
                         Site Url</label>
-                    <input type="text" class="form-control mb-3" id="Url" placeholder="Website Url" onkeyup="validateUrl()">
+                    <input type="text" class="form-control mb-3" id="Url" placeholder="Website Url"
+                        onkeyup="validateUrl()">
                 </div>
                 <div class="container d-flex m-2">
                     <button class="btn1  mx-auto py-2" onclick="createBookMark()" id="submit">submit</button>
@@ -66,7 +68,33 @@
         </div>
 
     </div>
-
+    <div class="h-100 w-100 position-absolute bg d-none" id="popout">
+        <div class="box-conent bg-white p-4 rounded-2 shadow-lg position-absolute pop ">
+            <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+                <div class="circles d-flex">
+                    <i class="fa-solid fa-circle me-1 text-danger"></i>
+                    <i class="fa-solid fa-circle me-1 text-warning"></i>
+                    <i class="fa-solid fa-circle text-success"></i>
+                </div>
+                <button class="btn border-0" id="closeBtn" onclick="exitPop()">
+                    <i class="fa-solid fa-xmark close fs-3"></i>
+                </button>
+            </header>
+            <p class="m-0 pb-2">
+                Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ol class="rules list-unstyled m-0">
+                <li>
+                    <i class="fa-regular fa-circle-right p-2 text-danger"></i>Site name must
+                    contain at least 3 characters
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-right p-2 text-danger"></i>Site URL must be a
+                    valid one
+                </li>
+            </ol>
+        </div>
+    </div>
 
 
     <!-- bootstrap_Cdn -->

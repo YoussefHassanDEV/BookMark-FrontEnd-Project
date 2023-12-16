@@ -23,7 +23,8 @@ function createBookMark() {
         localStorage.setItem("bookMarks", JSON.stringify(bookMarks));
         displayBookmarks(bookMarks);
     } else {
-        // Handle invalid input
+        popout.classList.remove("d-none");
+        
     }
 }
 
@@ -72,4 +73,9 @@ function validateUrl() {
         Url.classList.add("is-invalid");
         return false;
     }
+}
+function exitPop()
+{
+    popout.classList.add("d-none");
+
 }
