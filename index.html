@@ -36,15 +36,15 @@
                 <div class="d-flex flex-column container">
                     <label for="basic-url" class="form-label"><i class="fa-solid fa-book"></i>
                         Site Name</label>
-                    <input type="text" class="form-control mb-3" placeholder="Bookmark Name">
+                    <input type="text" class="form-control mb-3"id="Name" placeholder="Bookmark Name" onkeyup="validateProductName()">
                 </div>
                 <div class="d-flex flex-column container">
-                    <label for="basic-url" class="form-label"><i class="fa-solid fa-link"></i>
-                        Site Name</label>
-                    <input type="text" class="form-control mb-3 " placeholder="Website Url">
+                    <label for="basic-url" class="form-label" ><i class="fa-solid fa-link"></i>
+                        Site Url</label>
+                    <input type="text" class="form-control mb-3" id="Url" placeholder="Website Url" onkeyup="validateUrl()">
                 </div>
                 <div class="container d-flex m-2">
-                    <button class="btn1  mx-auto py-2" type="submit" id="submit">submit</button>
+                    <button class="btn1  mx-auto py-2" onclick="createBookMark()" id="submit">submit</button>
                 </div>
             </div>
             <div class="container">
@@ -53,18 +53,13 @@
                         <tr>
                             <th scope="col">Index</th>
                             <th scope="col">Website Name</th>
+                            <th scope="col">Website Url</th>
                             <th scope="col">Visit</th>
                             <th scope="col">Delete</th>
+                            <td><a href=""></a></td>
                         </tr>
                     </thead>
                     <tbody class="" id="Data">
-                        <tr>
-                            <td>Index</td>
-                            <td>Website Name</td>
-                            <td><button type="button" id="Visit" class="btn"><i class="fa-solid fa-eye me-1"></i></i>Visit</button></td>
-                            <td><button type="button" id="Delete" class="btn"><i class="fa-solid fa-trash-can
-                                        me-1"></i>Delete</button></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
