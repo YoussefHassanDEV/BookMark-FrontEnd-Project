@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Media/Bookmark_icon.png">
+    <!-- Bootstrap_Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- style_link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <div class="container bg-orange-100 vh-100 main1 ">
+        <div class="container-md "><br>
+            <div class="main2  mx-auto w-80 position-relative">
+                <h1 class="text-5xl text-center py-1  z-0">BookMarker</h1>
+            </div>
+            <br>
+            <br>
+            <div class="container form">
+                <div class="container d-flex justify-content-center my-3">
+                    <i class="fa-solid fa-bookmark mt-2 mx-2 bm1"></i>
+                    <h2 class="text-center text-2xl"> Bookmark your favorite sites </h2>
+                    <i class="fa-solid fa-bookmark mt-2 mx-2 bm2"></i>
+                </div>
+                <div class="d-flex flex-column container">
+                    <label for="basic-url" class="form-label"><i class="fa-solid fa-book"></i>
+                        Site Name</label>
+                    <input type="text" class="form-control mb-3" placeholder="Bookmark Name">
+                </div>
+                <div class="d-flex flex-column container">
+                    <label for="basic-url" class="form-label"><i class="fa-solid fa-link"></i>
+                        Site Name</label>
+                    <input type="text" class="form-control mb-3 " placeholder="Website Url">
+                </div>
+                <div class="container d-flex m-2">
+                    <button class="btn1  mx-auto py-2" type="submit" id="submit">submit</button>
+                </div>
+            </div>
+            <div class="container">
+                <table class="table mt-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">Index</th>
+                            <th scope="col">Website Name</th>
+                            <th scope="col">Visit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="" id="Data">
+                        <tr>
+                            <td>Index</td>
+                            <td>Website Name</td>
+                            <td><button type="button" id="Visit" class="btn"><i class="fa-solid fa-eye me-1"></i></i>Visit</button></td>
+                            <td><button type="button" id="Delete" class="btn"><i class="fa-solid fa-trash-can
+                                        me-1"></i>Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- bootstrap_Cdn -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- script -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+.main1 .main2 h1 {
+    font-family: Pacifico, cursive;
+    position: relative;
+    z-index: 9999;
+
+}
+
+.main1 .main2::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    height: 25px;
+    width: 280px;
+    background-color: #FEC260;
+    left: 15px;
+    bottom: 0;
+}
+
+.main1 .main2:hover::before {
+
+    height: 40px;
+    transition-duration: 180ms;
+}
+
+.main1 .form {
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+
+
+
+}
+
+.main1 .form h2 {
+    font-family:Righteous, cursive;
+    background: linear-gradient(to right,rgba(61,165,92,1), rgba(177,172,73,1));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.main1 .form .bm1 {
+    color: #3DA55C;
+}
+
+.main1 .form .bm2 {
+    color:#B1AC49;
+}
+#submit{
+    background-color: #D1512D;
+    color: white;
+    border-radius: 6px;
+    width: 150px;
+}
+#submit:hover{
+    background-color: #BB4120;
+    transition-duration: 0.4s;
+}
+#Visit{
+    background-color: #b4ca42;
+}
+#Visit:hover{
+    background-color: #8A9E23;
+    transition-duration: 0.4s;
+
+}
+#Delete{
+    background-color: red;
+}
+#Delete:hover{
+    background-color: #D30820;
+    transition-duration: 0.4s;
+}
